@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Codepen Hyd Meetup - Animations on the web</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>Animations<br>on the web</h1>
+    </section>
+
+    <section class="slide">
+      <h2>What is an Animation</h2>
+      <ul class="deck-child-current">
+        <li class="slide deck-before" id="extensions-goto" aria-hidden="false">
+          Anything that moves
+        </li>
+
+        <li class="slide deck-previous" id="extensions-menu" aria-hidden="false">
+          <iframe height='333' scrolling='no' src='http://codepen.io/pcridesagain/embed/itkpI/?height=333&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Some real world usecases</h2>
+      <h3>Hover Effects</h3>
+      <a target="_blank" href="http://www.rokivo.com/">http://www.rokivo.com/</a>
+      <br>
+      <a target="_blank" href="http://tympanus.net/Development/IconHoverEffects/#set-1">IconHoverEffects by Mary Lou (crnacura)</a>
+<br>
+<br>
+      <h3>Sliders</h3>
+      <a target="_blank" href="http://www.masterslider.com/features/templates/full-width-slider-animated-layers/">Master Sliders</a>
+<br>
+<br>
+      <h3>Random Effects</h3>
+      <a target="_blank" href="https://www.croptrust.org/2014/key-figures">Crop Trust</a>
+    </section>
+
+    <section class="slide">
+      <h2>Ok so how do I start?</h2>
+      <ul class="deck-child-current">
+        <li class="slide deck-before" id="extensions-goto" aria-hidden="false">
+          Transitions
+        </li>
+        <li class="slide deck-previous" id="extensions-menu" aria-hidden="false">
+          transition-property, transition-duration, transition-timing-function, and transition-delay
+        </li>
+        <li class="slide deck-previous" id="extensions-menu" aria-hidden="false">
+          <iframe height='268' scrolling='no' src='http://codepen.io/kevinjasti/embed/RWWEgG/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/kevinjasti/pen/RWWEgG/'>Transition Property</a> by Kevin Jasti (<a href='http://codepen.io/kevinjasti'>@kevinjasti</a>) on <a href='http://codepen.io'>CodePen</a>.
+          </iframe>
+        </li>
+      </ul>
+    </section>
+
+     <section class="slide">
+      <h2>Animations</h2>
+      <ul class="deck-child-current">
+        <li class="slide deck-before" id="extensions-goto" aria-hidden="false">
+          Keyframes
+        </li>
+        <li class="slide deck-previous" id="extensions-menu" aria-hidden="false">
+          Transforms
+        </li>
+        <li class="slide deck-previous" id="extensions-menu" aria-hidden="false">
+          Animation
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Example</h2>
+       <iframe height='800' scrolling='no' src='http://codepen.io/Zeaklous/embed/GwBJa/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='height:800px !important; width: 100%;'>See the Pen <a href='http://codepen.io/Zeaklous/pen/GwBJa/'>Changing a CSS Animation at its Current Values</a> by Zach Saucier (<a href='http://codepen.io/Zeaklous'>@Zeaklous</a>) on <a href='http://codepen.io'>CodePen</a>.
+      </iframe>
+    </section>
+
+     <section class="slide">
+      <h2>The Javascript Way - Use the force - raw power of plain JS</h2>
+      <h3>When? / Why?</h3>
+      <p>Lack of independent scale/rotation/position control</p>
+      <p>Performance</p>
+      <p>Finer controls - seek to a particular spot in the animation</p>
+      <p>Sequencing elements</p>
+      <p>Effects - Animating curves</p>
+      <a target="_blank" href="http://julian.com/research/velocity/demo.html">Example</a>
+    </section>
+
+
+    <section class="slide">
+      <h2>Example</h2>
+      <iframe height='268' scrolling='no' src='http://codepen.io/kevinjasti/embed/pjjqVQ/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/kevinjasti/pen/pjjqVQ/'>Pausing Transitions</a> by Kevin Jasti (<a href='http://codepen.io/kevinjasti'>@kevinjasti</a>) on <a href='http://codepen.io'>CodePen</a>.
+      </iframe>
+    </section>
+
+    <section class="slide">
+    <h2>Animation Libraries</h2>
+    <ul >
+        <li >
+          Tween JS
+        </li>
+        <li >
+          Jsanim
+        </li>
+        <li >
+           Minified.js
+        </li>
+
+        <li >
+           Greensock
+           <br>
+           <a target="_blank" href="http://codepen.io/GreenSock/popular/">Popular Greensock Animations</a>
+        </li>
+
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Sources and Refrences</h2>
+      <p>Pen CSS Q-Bert by Patrick Cox </p>
+
+      <p>Pen Transition Property by Shay Howe</p>
+
+      <p>Pen Changing a CSS Animation at its Current Values by Zach Saucier</p>
+
+      <p>Pen Pausing Transitions by Zach Saucier</p>
+
+      <p>Demo by Velocity JS</p>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
